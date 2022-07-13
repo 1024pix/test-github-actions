@@ -1,0 +1,8 @@
+name: pass
+on: push
+jobs:
+  pass-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pass-step
+        run: echo "Hello World, I pass!"
