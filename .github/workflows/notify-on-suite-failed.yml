@@ -24,4 +24,4 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-           SLACK_MESSAGE: 'Deployment failed ${{ outputs.wait }}'
+           SLACK_MESSAGE: 'Deployment failed ${{ steps.wait.outputs }}'
