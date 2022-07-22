@@ -1,8 +1,7 @@
 name: notify on deployment failed
 
 on:
-  deployment:
-    branches: main
+  repository_dispatch
 
 jobs:
   notify-on-deployment-failure:
