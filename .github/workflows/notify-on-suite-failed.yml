@@ -6,7 +6,6 @@ jobs:
   notify-on-failure-job:
     name: Notify on failure
     runs-on: ubuntu-latest
-    environment: test
     steps:
       - name: Wait for pass suite to conclude
         uses: lewagon/wait-on-check-action@v1.1.2
